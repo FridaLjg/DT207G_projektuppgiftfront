@@ -1,0 +1,141 @@
+body {
+    margin: 0 auto;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #FFF4DE;
+    color: #333;
+    min-height: 100vh;
+}
+
+/*Navigering*/
+nav {
+    background-color: #b96677;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFE8C4;
+}
+
+
+main {
+    padding: 3rem 1rem;
+}
+
+/*Formulär på admin-login*/
+.login-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #FFDDDD;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #FFCED8;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #b96677;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #FFE8C4;
+    color: #333;
+}
+
+/*Felmeddelanden vid admin-login*/
+#error-message {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #b96677;
+    padding: 2rem;
+    margin-top: 3rem;
+    color: white
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opening-hours p {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+    color: #FFF4DE;
+}
