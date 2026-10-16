@@ -145,9 +145,10 @@ productsContainer.addEventListener("click", (e) => {
 
     editingProductId = e.target.dataset.id;
 
-    console.log("Valt id:", editingProductId);
-
     const card = e.target.closest(".product-card");
+    if (card.querySelector(".edit-form")) {
+        return;
+    }
 
     card.insertAdjacentHTML(
         "beforeend",
