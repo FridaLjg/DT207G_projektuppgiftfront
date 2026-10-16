@@ -25,7 +25,7 @@ function displayProducts(products) {
         productsContainer.innerHTML += `
             <article class="product-card">
 
-                <h3>${product.name}</h3>
+                <h3>${product.productName}</h3>
 
                 <p>${product.description}</p>
 
