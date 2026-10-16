@@ -97,5 +97,42 @@ function displayProducts(products) {
     });
 }
 
+//Ta bort produkt
+productsContainer.addEventListener("click", async (e) => {
+
+    if (!e.target.classList.contains("delete-button")) {
+        return;
+    }
+
+    const productId = e.target.dataset.id;
+
+    try {
+
+        const token = localStorage.getItem("token");
+
+        const response = await fetch(
+            `http://localhost:3001/api/products/${productId}`,
+            {
+                method: "DELETE",
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }
+        );
+
+        const data = await response.json();
+
+        message.textContent = data.message;
+
+        getProducts();
+
+    } catch (error) {
+        console.error(error);
+
+        message.textContent =
+            "Kunde inte ta bort produkten.";
+    }
+});
+
 productForm.reset();
 getProducts();
