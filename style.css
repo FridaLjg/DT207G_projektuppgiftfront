@@ -41,6 +41,10 @@ main {
     padding: 3rem 1rem;
 }
 
+main h2 {
+    text-align: center;
+}
+
 /*Formulär på admin-login*/
 .login-container {
     max-width: 450px;
@@ -63,6 +67,18 @@ main {
     font-weight: bold;
 }
 
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form input {
+    width: 80%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
 .login-container input {
     width: 100%;
     padding: 0.8rem;
@@ -72,7 +88,7 @@ main {
 }
 
 .login-container button {
-    width: 100%;
+    width: 50%;
     padding: 0.9rem;
     border: none;
     border-radius: 8px;
@@ -94,7 +110,66 @@ main {
     font-weight: bold;
 }
 
-/* Footer */
+/*Formulär produkter*/
+.product-form {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #FFDDDD;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.product-form input,
+.product-form textarea,
+.product-form select {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.product-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.product-form button {
+    width: 80%;
+    padding: 1rem;
+    background-color: #b96677;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-form button:hover {
+    background-color: #FFE8C4;
+    color: #333;
+}
+
+#product-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product-form input,
+#product-form textarea {
+    width: 80%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/*Footer*/
 footer {
     background-color: #b96677;
     padding: 2rem;
