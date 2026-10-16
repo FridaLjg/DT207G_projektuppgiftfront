@@ -208,6 +208,10 @@ productsContainer.addEventListener("submit", async (e) => {
             }
         );
 
+        if (!response.ok) {
+            throw new Error("Kunde inte uppdatera produkten.");
+        }
+
         alert("Produkten uppdaterad!");
 
         getProducts();
