@@ -34,7 +34,8 @@ productForm.addEventListener("submit", async (e) => {
         const data = await response.json();
 
         if (!response.ok) {
-            message.textContent = data.error;
+            message.textContent =
+                "Produkten kunde inte sparas. Kontrollera att alla fält är ifyllda.";
             return;
         }
 

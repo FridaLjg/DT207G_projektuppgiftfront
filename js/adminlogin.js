@@ -29,7 +29,8 @@ form.addEventListener("submit", async (e) => {
 
         //Om fel
         if (!response.ok) {
-            errorMessage.textContent = data.error;
+            errorMessage.textContent =
+                "Fel användarnamn eller lösenord.";
             return;
         }
 
