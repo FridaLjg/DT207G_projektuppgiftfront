@@ -194,6 +194,12 @@ main h2 {
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .product-card h3 {
@@ -208,13 +214,6 @@ main h2 {
 .products-list {
     max-width: 800px;
     margin: 3rem auto;
-}
-
-.product-card {
-    background-color: #FFDDDD;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 15px;
 }
 
 .product-card h3 {
@@ -258,6 +257,51 @@ main h2 {
 .delete-button:hover {
     background-color: #FFE8C4;
     color: #333;
+}
+
+/*Redigerings-formulär*/
+.edit-form {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #FFF4DE;
+    border: 2px solid #FFDDDD;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.edit-form label {
+    font-weight: bold;
+    color: #b96677;
+}
+
+.edit-form input,
+.edit-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #FFCED8;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.edit-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.edit-form button {
+    align-self: flex-start;
+    background-color: #b96677;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-form button:hover {
+    background-color: #9e5060;
 }
 
 /*Footer*/
